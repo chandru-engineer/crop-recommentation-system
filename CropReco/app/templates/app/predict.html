@@ -1,0 +1,28 @@
+{% extends "app/base.html" %}
+
+{% block content %}
+
+<div class="container text">
+  <div class="text-center">
+    <h1> High Recommented Crop</h1>
+    <hr>
+    <br>
+    <div class="card">
+      <div class="card-body">
+        {{answer}}
+      </div>
+    </div>
+    <br>
+    <br>
+    <h1> And Also can crop </h1>
+    {% for item in list_ %}
+    <br>
+    <div class="card">
+      <div class="card-body">
+        {{ item}}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock content %}

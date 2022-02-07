@@ -1,0 +1,32 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <img src="{% static 'app/image/ai_bot.jpg' %}" class="mx-auto d-block" style="width:100%">
+    </div>
+    <div class="col-lg-6">
+      <div class="jumbotron">
+        <div class="container text-center">
+          <div class="col-md-12">
+            <h1 class="text-responsive">Crop Recommentation</h1>
+          </div>
+          <p class="text-break""> This is a website which present service of Crop Recommentation system</p>
+          <h1  class=" text-responsive">Usecase</h1>
+            <a href="usecase/"><button class="btn btn-primary btn-xl">
+                <span class="spinner-grow spinner-grow-sm"></span>Try It..
+              </button></a>
+            <br><br>
+          <h1 class="text-responsive">For Admin</h1>
+          <a href="admin/"><button class="btn btn-primary btn-xl">
+              <span class="spinner-grow spinner-grow-sm"></span>Admin
+            </button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

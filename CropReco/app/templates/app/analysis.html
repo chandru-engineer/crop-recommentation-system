@@ -1,0 +1,21 @@
+{% extends "app/base.html" %}
+
+{% block content %}
+
+
+<div class="container">
+  <div class="jumbotron">
+    {% if graph %}
+    {% for item in graph %}
+    {{ item|safe}}
+    <br>
+    <br>
+    {% endfor %}
+    {% else %}
+    <p>No graph was provided</p>
+    {% endif %}
+  </div>
+</div>
+
+</div>
+{% endblock content %}
